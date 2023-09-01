@@ -32,7 +32,7 @@ export default function EditRoom() {
   }, []);
   const editor = useEditor(
     {
-      extensions: [StarterKit, Underline, EditorLink, Highlight, TextAlign],
+      extensions: [StarterKit, Underline, Highlight, TextAlign],
       content: post.content,
       onUpdate: ({ editor }) => {
         setContent(editor.getHTML());
@@ -121,15 +121,7 @@ export default function EditRoom() {
                   <RichTextEditor.Link />
                   <RichTextEditor.Unlink />
                 </RichTextEditor.ControlsGroup>
-
-                <RichTextEditor.ControlsGroup>
-                  <RichTextEditor.AlignLeft />
-                  <RichTextEditor.AlignCenter />
-                  <RichTextEditor.AlignJustify />
-                  <RichTextEditor.AlignRight />
-                </RichTextEditor.ControlsGroup>
               </RichTextEditor.Toolbar>
-
               <RichTextEditor.Content />
             </RichTextEditor>
           </div>

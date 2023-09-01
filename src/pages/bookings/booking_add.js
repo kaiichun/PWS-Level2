@@ -123,13 +123,6 @@ export default function BookingAdd() {
                     <RichTextEditor.Link />
                     <RichTextEditor.Unlink />
                   </RichTextEditor.ControlsGroup>
-
-                  <RichTextEditor.ControlsGroup>
-                    <RichTextEditor.AlignLeft />
-                    <RichTextEditor.AlignCenter />
-                    <RichTextEditor.AlignJustify />
-                    <RichTextEditor.AlignRight />
-                  </RichTextEditor.ControlsGroup>
                 </RichTextEditor.Toolbar>
                 <RichTextEditor.Content />
               </RichTextEditor>

@@ -39,7 +39,7 @@ export default function BookingEdit() {
   }, []);
   const editor = useEditor(
     {
-      extensions: [StarterKit, Underline, EditorLink, Highlight, TextAlign],
+      extensions: [StarterKit, Underline, Highlight, TextAlign],
       content: booking.content,
       onUpdate: ({ editor }) => {
         setContent(editor.getHTML());
@@ -131,15 +131,7 @@ export default function BookingEdit() {
                   <RichTextEditor.Link />
                   <RichTextEditor.Unlink />
                 </RichTextEditor.ControlsGroup>
-
-                <RichTextEditor.ControlsGroup>
-                  <RichTextEditor.AlignLeft />
-                  <RichTextEditor.AlignCenter />
-                  <RichTextEditor.AlignJustify />
-                  <RichTextEditor.AlignRight />
-                </RichTextEditor.ControlsGroup>
               </RichTextEditor.Toolbar>
-
               <RichTextEditor.Content />
             </RichTextEditor>
           </div>
